@@ -10,14 +10,14 @@ public class Singleappearance {
 		int i=0;
 		String out="";
 		String a="";
-		int count=0;
+		int c=0;
 		for(i=0;i<str.length;i++){
 			for(int j=0;j<str.length;j++)
 				if(Integer.parseInt(str[i])==Integer.parseInt(str[j]))
-					count=count+1;	
-			if(count==1)
+					c=c+1;	
+			if(c==1)
 				out=out+str[i]+" ";
-			count=0;
+			c=0;
 		}
 		System.out.println(out);
 		}
